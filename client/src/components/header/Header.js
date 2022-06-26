@@ -10,6 +10,9 @@ export const Header = () => {
       <Link to="/all-users">
         <div className="nav-cell">USERS</div>
       </Link>
+      <Link to="/manage-users">
+        <div className="nav-cell">MANAGE</div>
+      </Link>
     </div>
   );
 };
