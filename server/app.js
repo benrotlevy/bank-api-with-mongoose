@@ -9,10 +9,10 @@ const app = express();
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const publicDirectoryPath = path.join(__dirname, "client/build");
-app.use(express.static(publicDirectoryPath));
 
 app.use(express.json());
 app.use(cors());
+app.use(express.static(publicDirectoryPath));
 app.use("/users", usersRoute);
 app.use("/manage", manage);
 
